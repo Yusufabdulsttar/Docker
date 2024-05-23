@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            overflow: hidden; /* Prevents the image from overflowing */
+        }
+        .container {
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            color: #fff; /* Title text color */
+            font-size: 50px; /* Font size increased */
+            font-weight: bold;
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Title text appears above the image */
+            white-space: nowrap; /* Prevents text from wrapping */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+        }
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0; /* Ensures the image is behind other elements */
+            filter: blur(2px);
+        }
+        a {
+            display: inline-block;
+            margin-top: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff; /* Link text color */
+            background-color: #8bc34a; /* Button background color */
+            padding: 15px 30px; /* Increased padding */
+            border: none;
+            border-radius: 25px; /* Rounded border */
+            font-size: 25px; /* Font size increased */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition */
+            position: relative; /* Button positioned relative to container */
+            z-index: 1; /* Ensure button appears above the image */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+            
+        }
+        a:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome My Name is: Yusuf Abdulsttar</h1>
+        <a href="https://www.linkedin.com/in/yusuf-abdulsttar-3087b6ab/" target="_blank">Visit My Linkedin</a>
+        <img src="Photo.jpg" alt="Relaxing Image">
+    </div>
+</body>
+</html>
+
