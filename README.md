@@ -40,7 +40,7 @@ This project is a simple Node.js application containerized with Docker, along wi
    git clone https://github.com/Yusufabdulsttar/Docker.git && cd Docker/ 
 2. Start the services using Docker Compose:
    ```bash
-   docker-compose up
+   docker compose -f Docker-compose.yml up 
 
 ### Accessing the Services
 
